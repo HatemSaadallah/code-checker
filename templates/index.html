@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Read Text File</title> 
+    </head> 
+    <body> 
+        <form action="/check" method="post">
+            <h1>Input the text that you need to check:</h1> 
+            <textarea id="code" name="code" rows="4" cols="50"></textarea> 
+            <button>Check</button>
+        </form>
+        {% for symbol in symbols %}
+        <p>{{ symbol }}</p>
+        {% endfor %}
+        {% for character in characters %}
+        <p>{{ character }}</p>
+        {% endfor %}
+    </body> 
+
+</html> 
