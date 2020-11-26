@@ -17,6 +17,7 @@ def check():
         code=request.form['code']
         # print(code)
         code1 = checker.Checker(code)
+        code1.fillSymbols()
         symDub = code1.getSymbolDuplicates()
         charDub = code1.getCharachterDuplicates()
     return render_template("index.html", symbols=symDub, characters=charDub)

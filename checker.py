@@ -3,6 +3,11 @@ class Checker:
         self.code = code
         self.symbols = symbols
 
+
+
+
+    def fillSymbols(self):
+        self.symbols = []
         for thing in self.code.split("------------------------------------------------------------------------------"):
             thing = thing.replace("-----", "").replace("--", "")
             # print(thing)
